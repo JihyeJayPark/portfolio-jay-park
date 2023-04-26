@@ -1,16 +1,13 @@
 // COLOURS:
 // primary: #FFFCEB;
-// secondary (white shade): #f6f6f6;
-// tertiary (accent): #f38d8d; 
-// quaternary (grey blue): #68b0c1; 
-// quinary (dusk blue): #227284;
-// black: #171717; 
+// secondary: #1A1A1A;
+// tertiary: #C5C3B6;
 
 // HEADINGS:
-// h2: 80px;
-// h3: 42px;
-// h4: 32px;
-// h5: 24px;
+// h1: 80px;
+// h2: 42px;
+// h3: 32px;
+// h4: 24px;
 
 // BUTTON:
 // button: 20px;
@@ -30,8 +27,4 @@
 @use "./partials/main";
 @use "./partials/footer";
 @use "./partials/mediaQueries";
-// @use "./partials/blogStyles";
-// @use "./partials/contactStyles";
-// @use "./partials/blogMediaQueries";
-// @use "./partials/contactMediaQueries";
 // @use "./partials/hamburgerMenu";
