@@ -1,0 +1,38 @@
+@use "./variables";
+
+html {
+    font-size: 125%;
+}
+
+body p {
+    font-family: variables.$bodyFont;
+    font-size: 1rem;
+    color: variables.$secondary;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: variables.$keyFont;
+    color: variables.$secondary;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 4.6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
