@@ -260,16 +260,16 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 10rem;
   line-height: 4.6rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 5rem;
 }
 
 h4 {
@@ -325,4 +325,71 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+}
+
+header {
+  height: 100vh;
+}
+
+.header {
+  margin-top: 200px;
+}
+
+h1 {
+  height: inherit;
+}
+
+.myName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerBottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about {
+  height: 100vh;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imgContainer {
+  width: 40%;
+}
+
+.textContainer {
+  width: 60%;
+}
+.textContainer p {
+  margin: 24px 24px;
+}
+.textContainer .pTop {
+  margin-top: 0;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.iconContainer i {
+  font-size: 3rem;
 }

@@ -1,0 +1,35 @@
+// Section 1 : About styling
+
+.about {
+    height: 100vh;
+}
+
+.aboutContainer {
+    display: flex;
+
+}
+
+.imgContainer {
+    width: 40%;
+}
+
+.textContainer {
+    width: 60%;
+    p {
+        margin: 24px 24px;
+    }
+    .pTop {
+        margin-top: 0;
+    }
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    
+    i {
+        font-size: 3rem;
+    }
+}
+
+
