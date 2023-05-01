@@ -51,3 +51,14 @@
 .skills {
     margin-bottom: 200px;
 }
+
+// Section 3 : Projects styling
+.projectBox {
+    display: flex;
+    .mockupContainer {
+        width: 50%;
+    }
+    .projectContentContainer {
+        width: 50%;
+    }
+}

@@ -416,3 +416,15 @@ h1 {
 .skills {
   margin-bottom: 200px;
 }
+
+.projectBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projectBox .mockupContainer {
+  width: 50%;
+}
+.projectBox .projectContentContainer {
+  width: 50%;
+}
