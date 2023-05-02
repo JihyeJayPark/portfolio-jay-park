@@ -103,4 +103,15 @@
 // Section 4 : Contact styling
 .contact {
     background-color: variables.$primary;
+    padding-bottom: 200px;
+    p {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        .message {
+            margin-bottom: 50px;
+        }
+    }
 }
