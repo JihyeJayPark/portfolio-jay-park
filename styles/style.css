@@ -274,17 +274,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .wrapper {
   width: 85%;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-body {
-  background-color: #FFFCEB;
 }
 
 ul, li, a {
@@ -330,6 +326,7 @@ a {
 
 header {
   height: 100vh;
+  background-color: #FFFCEB;
 }
 
 .header {
@@ -361,6 +358,7 @@ h1 {
 
 .about {
   height: 100vh;
+  background-color: #D1DBC2;
 }
 
 .aboutContainer {
@@ -395,6 +393,11 @@ h1 {
   font-size: 3rem;
 }
 
+.skills {
+  padding-bottom: 200px;
+  background-color: #FFFCEB;
+}
+
 .skillsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,18 +416,58 @@ h1 {
   font-size: 6rem;
 }
 
-.skills {
-  margin-bottom: 200px;
+.projects {
+  background-color: #D1DBC2;
 }
 
 .projectBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
 }
 .projectBox .mockupContainer {
   width: 50%;
 }
+.projectBox .mockupContainer img {
+  min-height: 330px;
+  min-width: 470px;
+}
 .projectBox .projectContentContainer {
   width: 50%;
+  text-align: center;
+  border: 2px dotted #1A1A1A;
+  padding: 2%;
+}
+.projectBox .projectContentContainer h4, .projectBox .projectContentContainer .skillIcons, .projectBox .projectContentContainer p, .projectBox .projectContentContainer .projectLink {
+  margin-bottom: 15px;
+}
+.projectBox .projectContentContainer .skillIcons i {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.projectBox .projectContentContainer .projectLink a {
+  padding: 10px 30px;
+  background-color: #D8B8A9;
+  border: 1px solid #D8B8A9;
+  border-radius: 10%;
+}
+.projectBox .containerOne, .projectBox .containerThree {
+  margin-left: 25px;
+}
+.projectBox .containerTwo {
+  margin-right: 25px;
+}
+
+.contact {
+  background-color: #FFFCEB;
+}
+
+footer {
+  background-color: #FFFCEB;
+  text-align: center;
 }

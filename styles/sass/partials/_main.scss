@@ -1,6 +1,9 @@
+@use "./variables";
+
 // Section 1 : About styling
 .about {
     height: 100vh;
+    background-color: variables.$tertiary;
 }
 
 .aboutContainer {
@@ -32,6 +35,11 @@
 }
 
 // Section 2 : Skills styling
+.skills {
+    padding-bottom: 200px;
+    background-color: variables.$primary;
+}
+
 .skillsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -41,24 +49,58 @@
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
-
     }
     i {
         font-size: 6rem;
     }
 }
 
-.skills {
-    margin-bottom: 200px;
+// Section 3 : Projects styling
+.projects {
+    background-color: variables.$tertiary;
 }
 
-// Section 3 : Projects styling
 .projectBox {
     display: flex;
+    align-items: center;
+    margin-bottom: 50px;
     .mockupContainer {
         width: 50%;
+        img {
+            min-height: 330px;
+            min-width: 470px;
+        }
     }
     .projectContentContainer {
         width: 50%;
+        text-align: center;
+        border: 2px dotted variables.$secondary;
+        padding: 2%;
+        h4, .skillIcons, p, .projectLink {
+            margin-bottom: 15px;
+        }
+        .skillIcons i {
+            font-size: 1.5rem;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .projectLink a {
+            padding: 10px 30px;
+            background-color: variables.$quaternary;
+            border: 1px solid variables.$quaternary;
+            border-radius: 10%;
+            
+        }
     }
+    .containerOne, .containerThree {
+        margin-left: 25px;
+    }
+    .containerTwo {
+        margin-right: 25px;
+    }
+}
+
+// Section 4 : Contact styling
+.contact {
+    background-color: variables.$primary;
 }
