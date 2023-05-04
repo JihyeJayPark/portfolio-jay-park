@@ -357,7 +357,7 @@ li {
 
 header {
   height: 100vh;
-  background-color: #FFFCEB;
+  background-color: #D1DBC2;
 }
 
 .header {
@@ -508,6 +508,7 @@ h1 {
 }
 .contact p {
   text-align: center;
+  padding-bottom: 20px;
 }
 .contact form {
   display: -webkit-box;
@@ -517,6 +518,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 50px;
 }
 .contact form .message {
   margin-bottom: 50px;

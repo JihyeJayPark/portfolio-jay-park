@@ -116,10 +116,12 @@
     
     p {
         text-align: center;
+        padding-bottom: 20px;
     }
     form {
         display: flex;
         flex-direction: column;
+        padding: 0 50px;
         .message {
             margin-bottom: 50px;
         }
