@@ -244,7 +244,7 @@ html {
 }
 
 body p {
-  font-family: "Cabin", "sans-serif";
+  font-family: "Inconsolata", "monospace";
   font-size: 1rem;
   color: #1A1A1A;
   line-height: 1.6rem;
@@ -252,11 +252,20 @@ body p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Oswald", "sans-serif";
+  font-family: "PT Sans", "sans-serif";
   color: #1A1A1A;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin: 0;
+}
+
+a {
+  font-family: "Inconsolata", "monospace";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1A1A1A;
+  line-height: 1.6rem;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -292,9 +301,31 @@ li {
   list-style: none;
 }
 
-a {
+.navLogo, .navLink {
+  font-size: 1.2rem;
   text-decoration: none;
+  text-transform: uppercase;
   color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navLink {
+  border: 2px solid transparent;
+  padding: 12px 16px;
+}
+.navLink:hover {
+  border: 2px solid #1A1A1A;
+}
+
+.contactLink {
+  background-color: #1A1A1A;
+  color: #FFFCEB;
+}
+.contactLink:hover {
+  background-color: #FFFCEB;
+  color: #1A1A1A;
 }
 
 .navbar {
@@ -357,8 +388,9 @@ h1 {
 }
 
 .about {
-  height: 100vh;
   background-color: #D1DBC2;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 .aboutContainer {
@@ -380,22 +412,14 @@ h1 {
 .textContainer .pTop {
   margin-top: 0;
 }
-
-.iconContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.iconContainer i {
-  font-size: 3rem;
+.textContainer .pBottom {
+  margin-bottom: 0;
 }
 
 .skills {
-  padding-bottom: 200px;
   background-color: #FFFCEB;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 .skillsContainer {
@@ -418,6 +442,8 @@ h1 {
 
 .projects {
   background-color: #D1DBC2;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 .projectBox {
@@ -439,7 +465,8 @@ h1 {
 .projectBox .projectContentContainer {
   width: 50%;
   text-align: center;
-  border: 2px dotted #1A1A1A;
+  border: 2px solid #1A1A1A;
+  border-radius: 7%;
   padding: 2%;
 }
 .projectBox .projectContentContainer h4, .projectBox .projectContentContainer .skillIcons, .projectBox .projectContentContainer p, .projectBox .projectContentContainer .projectLink {
@@ -465,7 +492,19 @@ h1 {
 
 .contact {
   background-color: #FFFCEB;
+  padding-top: 100px;
   padding-bottom: 200px;
+}
+.contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contactContainer .contactTextContainer {
+  width: 45%;
+}
+.contact .contactContainer .contactFormContainer {
+  width: 55%;
 }
 .contact p {
   text-align: center;
@@ -482,8 +521,26 @@ h1 {
 .contact form .message {
   margin-bottom: 50px;
 }
+.contact .iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact .iconContainer i {
+  font-size: 3rem;
+}
 
 footer {
-  background-color: #FFFCEB;
+  background-color: #1A1A1A;
   text-align: center;
+}
+footer p {
+  color: #FFFCEB;
+}
+footer p a {
+  color: inherit;
+  text-decoration: none;
 }

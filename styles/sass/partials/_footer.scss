@@ -1,6 +1,13 @@
 @use "./variables";
 
 footer {
-    background-color: variables.$primary;
+    background-color: variables.$secondary;
     text-align: center;
+    p {
+        color: variables.$primary;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
 }

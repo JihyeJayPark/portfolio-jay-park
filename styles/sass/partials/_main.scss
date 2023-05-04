@@ -2,8 +2,9 @@
 
 // Section 1 : About styling
 .about {
-    height: 100vh;
     background-color: variables.$tertiary;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .aboutContainer {
@@ -23,21 +24,16 @@
     .pTop {
         margin-top: 0;
     }
-}
-
-.iconContainer {
-    display: flex;
-    justify-content: space-evenly;
-    
-    i {
-        font-size: 3rem;
+    .pBottom {
+        margin-bottom: 0;
     }
 }
 
 // Section 2 : Skills styling
 .skills {
-    padding-bottom: 200px;
     background-color: variables.$primary;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .skillsContainer {
@@ -58,6 +54,8 @@
 // Section 3 : Projects styling
 .projects {
     background-color: variables.$tertiary;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .projectBox {
@@ -74,7 +72,8 @@
     .projectContentContainer {
         width: 50%;
         text-align: center;
-        border: 2px dotted variables.$secondary;
+        border: 2px solid variables.$secondary;
+        border-radius: 7%;
         padding: 2%;
         h4, .skillIcons, p, .projectLink {
             margin-bottom: 15px;
@@ -103,7 +102,18 @@
 // Section 4 : Contact styling
 .contact {
     background-color: variables.$primary;
+    padding-top: 100px;
     padding-bottom: 200px;
+    .contactContainer {
+        display: flex;
+        .contactTextContainer {
+            width: 45%;
+        }
+        .contactFormContainer {
+            width: 55%;
+        }
+    }
+    
     p {
         text-align: center;
     }
@@ -112,6 +122,14 @@
         flex-direction: column;
         .message {
             margin-bottom: 50px;
+        }
+    }
+    .iconContainer {
+        display: flex;
+        justify-content: space-evenly;
+
+        i {
+            font-size: 3rem;
         }
     }
 }

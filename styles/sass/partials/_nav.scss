@@ -9,9 +9,38 @@ li {
     list-style: none;
 }
 
-a {
+.navLogo, .navLink {
+    font-size: 1.2rem;
     text-decoration: none;
+    text-transform: uppercase;
+    
     color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+    // &:hover {
+    //     border: 2px solid variables.$secondary;
+    // }    
+    // a:focus {
+    //     background-color: variables.$secondary;
+    //     color: variables.$primary;
+    // }
+}
+
+.navLink {
+    border: 2px solid transparent;
+    padding: 12px 16px;
+    &:hover {
+        border: 2px solid variables.$secondary;
+    }
+}
+
+.contactLink {
+    background-color: variables.$secondary;
+    color: variables.$primary;
+    &:hover {
+        background-color: variables.$primary;
+        color: variables.$secondary;
+    }
 }
 
 .navbar {
