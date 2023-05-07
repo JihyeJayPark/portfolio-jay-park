@@ -469,8 +469,11 @@ h1 {
   border-radius: 7%;
   padding: 2%;
 }
-.projectBox .projectContentContainer h4, .projectBox .projectContentContainer .skillIcons, .projectBox .projectContentContainer p, .projectBox .projectContentContainer .projectLink {
+.projectBox .projectContentContainer h4, .projectBox .projectContentContainer .skillIcons, .projectBox .projectContentContainer .projectLink {
   margin-bottom: 15px;
+}
+.projectBox .projectContentContainer p {
+  margin-bottom: 30px;
 }
 .projectBox .projectContentContainer .skillIcons i {
   font-size: 1.5rem;
@@ -478,10 +481,19 @@ h1 {
   margin-right: 5px;
 }
 .projectBox .projectContentContainer .projectLink a {
-  padding: 10px 30px;
+  text-decoration: none;
+  padding: 15px 30px;
   background-color: #D8B8A9;
   border: 1px solid #D8B8A9;
   border-radius: 10%;
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projectBox .projectContentContainer .projectLink a:hover {
+  border: 2px solid #D8B8A9;
+  background-color: #D1DBC2;
 }
 .projectBox .containerOne, .projectBox .containerThree {
   margin-left: 25px;
@@ -511,6 +523,18 @@ h1 {
   padding-bottom: 20px;
 }
 .contact form {
+  padding: 0 50px;
+}
+.contact form .input {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border: 2px solid #1A1A1A;
+}
+.contact form .message {
+  margin-bottom: 50px;
+  border: 2px solid #1A1A1A;
+}
+.contact form .formBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,10 +542,33 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 50px;
+  font-family: "PT Sans", "sans-serif";
+  text-transform: uppercase;
 }
-.contact form .message {
-  margin-bottom: 50px;
+.contact form .buttonBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact form .button {
+  background-color: #1A1A1A;
+  border: 2px solid #1A1A1A;
+  color: #FFFCEB;
+  padding: 12px 16px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.contact form .button:hover {
+  background-color: #FFFCEB;
+  color: #1A1A1A;
 }
 .contact .iconContainer {
   display: -webkit-box;
