@@ -1,0 +1,72 @@
+@use "./variables";
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .hamburgerMenu {
+        display: block;
+    }
+    .hamburgerMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenu.active .bar:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    .hamburgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: absolute;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: variables.$primary;
+        color: variables.$secondary;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-bottom: 300px;
+    }
+    .navItem {
+        margin: 14px 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    h1 {
+        font-size: 8rem;
+        line-height: 4rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
