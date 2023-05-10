@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 1px solid red;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -375,6 +369,7 @@ li {
 header {
   height: 100vh;
   background-color: #FFFCEB;
+  overflow: hidden;
 }
 
 .header {
@@ -395,6 +390,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+.headerTop {
+  color: #E9967A;
+}
+
 .headerBottomBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,6 +403,40 @@ h1 {
           justify-content: flex-end;
 }
 
+.headerBottomBox .text {
+  position: relative;
+}
+
+.text.secondText:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFCEB;
+  border-left: 2px solid #1A1A1A;
+  -webkit-animation: animate 4s steps(12) infinite;
+          animation: animate 4s steps(12) infinite;
+}
+
+@-webkit-keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 .about {
   background-color: #D1DBC2;
   padding-top: 100px;
@@ -500,8 +533,8 @@ h1 {
 .projectBox .projectContentContainer .projectLink a {
   text-decoration: none;
   padding: 15px 30px;
-  background-color: #D8B8A9;
-  border: 1px solid #D8B8A9;
+  background-color: #E9967A;
+  border: 1px solid #E9967A;
   border-radius: 10%;
   margin: 0 10px;
   cursor: pointer;
@@ -509,7 +542,7 @@ h1 {
   transition: 0.3s;
 }
 .projectBox .projectContentContainer .projectLink a:hover {
-  border: 2px solid #D8B8A9;
+  border: 2px solid #E9967A;
   background-color: #D1DBC2;
 }
 .projectBox .containerOne, .projectBox .containerThree {

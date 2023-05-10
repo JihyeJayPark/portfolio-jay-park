@@ -3,6 +3,7 @@
 header {
     height: 100vh;
     background-color: variables.$primary;
+    overflow: hidden;
 }
 
 .header {
@@ -19,7 +20,37 @@ h1 {
     margin-bottom: 20px;
 }
 
- .headerBottomBox {
+.headerTop {
+    color: variables.$quaternary;
+}
+
+.headerBottomBox {
     display: flex;
     justify-content: flex-end;
- }
+}
+
+.headerBottomBox .text {
+    position: relative;
+}
+.text.secondText:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: variables.$primary;
+    border-left: 2px solid variables.$secondary;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+

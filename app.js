@@ -3,23 +3,20 @@ const portfolio = {};
 portfolio.hamMenuToggle = function() {
     const hamburger = document.querySelector(".hamburgerMenu");
     const navMenu = document.querySelector(".navMenu");
-    // const h1Element = document.querySelector(".myName");
     hamburger.addEventListener("click", function(){
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
-        // h1Element.classList.toggle("active");
         }
     )
     document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", function () {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-        // h1Element.classList.remove("active");
         }
     ))
 }
 
 portfolio.titleChanger = function() {
-    const title = document.querySelector(".headerBottom");
+    const title = document.querySelector(".secondText");
 
     const titleAnimation = function() {
         setTimeout(() => {
@@ -27,19 +24,16 @@ portfolio.titleChanger = function() {
         }, 0);
         setTimeout(() => {
             title.textContent = "Learner"
-        }, 3000);
+        }, 4000);
         setTimeout(() => {
             title.textContent = "Creator"
-        }, 6000);
+        }, 8000);
         setTimeout(() => {
-            title.textContent = "Traveller"
-        }, 9000);
-        setTimeout(() => {
-            title.textContent = "Cook"
+            title.textContent = "Cook 👩‍🍳"
         }, 12000);
     }
     titleAnimation();
-    setInterval(titleAnimation, 15000);
+    setInterval(titleAnimation, 16000);
 };
 
 portfolio.init = () => {
