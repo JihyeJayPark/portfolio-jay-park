@@ -1,19 +1,14 @@
 // COLOURS:
 // primary: #FFFCEB;
 // secondary: #1A1A1A;
-// tertiary: #C5C3B6;
+// tertiary: #D1DBC2;
+// quaternary: #E9967A;
 
 // HEADINGS:
 // h1: 200px;
-// h2: 100px;
-// h3: 32px;
-// h4: 24px;
-
-// BUTTON:
-// button: 20px;
-
-// MENU:
-// menu: 20px;
+// h2: 120px;
+// h3: 100px;
+// h4: 30px;
 
 // BODY:
 // body: 20px;
@@ -27,4 +22,3 @@
 @use "./partials/main";
 @use "./partials/footer";
 @use "./partials/mediaQueries";
-// @use "./partials/hamburgerMenu";

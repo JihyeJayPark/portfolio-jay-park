@@ -15,6 +15,7 @@ portfolio.hamMenuToggle = function() {
     ))
 }
 
+// referred to https://www.youtube.com/watch?v=nxoHR9lltK0&list=PL4lGBtrrOMpGu8I1Xbklxuu39hJPonbPa&index=3&t=1s
 portfolio.titleChanger = function() {
     const title = document.querySelector(".secondText");
 
@@ -28,12 +29,9 @@ portfolio.titleChanger = function() {
         setTimeout(() => {
             title.textContent = "Creator"
         }, 8000);
-        setTimeout(() => {
-            title.textContent = "Cook 👩‍🍳"
-        }, 12000);
     }
     titleAnimation();
-    setInterval(titleAnimation, 16000);
+    setInterval(titleAnimation, 12000);
 };
 
 portfolio.init = () => {
@@ -43,6 +41,7 @@ portfolio.init = () => {
 
 portfolio.init();
 
+// grabbed it from https://help.formspree.io/hc/en-us/articles/1500009404742-How-to-clear-a-form-after-submission
 window.onbeforeunload = () => {
     for (const form of document.getElementsByTagName('form')) {
         form.reset();
