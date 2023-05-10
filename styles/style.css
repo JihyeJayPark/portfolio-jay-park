@@ -479,10 +479,6 @@ h1 {
 .projectBox .mockupContainer {
   width: 50%;
 }
-.projectBox .mockupContainer img {
-  min-height: 330px;
-  min-width: 470px;
-}
 .projectBox .projectContentContainer {
   width: 50%;
   text-align: center;
@@ -727,6 +723,12 @@ footer p a {
   .contactContainer .contactFormContainer form {
     padding: 0;
   }
+  .contact .contactContainer .contactTextContainer {
+    width: 100%;
+  }
+  .contact .contactContainer .contactFormContainer {
+    width: 100%;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -754,9 +756,15 @@ footer p a {
     margin-bottom: 15px;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 550px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 480px) {
   .mockupContainer img {
-    width: 80%;
+    min-height: 300px;
+    min-width: 397px;
   }
 }
 /* Landscape phones and down */

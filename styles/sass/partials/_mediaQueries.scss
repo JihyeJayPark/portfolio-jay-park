@@ -103,6 +103,13 @@
             }
         }
     }
+
+    .contact .contactContainer .contactTextContainer {
+        width: 100%;
+    }
+    .contact .contactContainer .contactFormContainer {
+        width: 100%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -133,15 +140,18 @@
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 550px) {
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 480px) {
     .mockupContainer img {
-            // min-height: 200px;
-            // min-width: 100px;
-            width: 80%;
-        }
-    }    
-
-
+        min-height: 300px;
+        min-width: 397px;
+    }
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
     h1 {
