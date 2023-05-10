@@ -638,6 +638,7 @@ footer {
 }
 footer p {
   color: #FFFCEB;
+  margin: 0;
 }
 footer p a {
   color: inherit;
